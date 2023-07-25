@@ -1,1 +1,5 @@
+# Carpetas
 node_modules
+
+# Ejecutables
+commit-y-push.sh
