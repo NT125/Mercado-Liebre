@@ -49,17 +49,31 @@ ul{
 }
 
 footer{
-    padding: 5em;
+    padding-top: 1em;
     background-color: white;
-    color: gray;
+    color: #666;
+    margin: auto;
+    text-align: center;
 }
 
 footer section{
-    margin-bottom: 5em;
+    margin: 3em 3em;
 }
 
-footer h2{
+footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color:#1259c3
+}
+
+footer h3{
     margin: 0;
+}
+
+footer .copyright{
+    margin:0;
+    padding: 1.5em;
+    text-align:left;
 }
 
 .seccion-tienda,
@@ -89,8 +103,8 @@ footer h2{
 
 .delivery-logo{
     width: 2em;
-    color: #5fcd1a;
-    border: solid 1px #5fcd1a;
+    color: #39b54a;
+    border: solid 1px #39b54a;
     border-radius: 100%;
     padding:5px;
     margin:10px 0;
@@ -119,13 +133,14 @@ footer h2{
 
 .descripcion{
     margin-top: 1em;
-    color: gray;
+    color: #666;
 }
 
-.center{
+.info-compra{
     text-align: center;
     margin: 1em auto;
 }
+
 
 @media (max-width:360px){    
     .descripcion{
