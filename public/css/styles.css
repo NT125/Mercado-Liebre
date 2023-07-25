@@ -62,8 +62,14 @@ footer h2{
     margin: 0;
 }
 
+.seccion-tienda,
+.seccion-cuenta{
+    margin: 1em 0;
+}
+
 .logo{
-    width: 60%;
+    margin:1em 0;
+    width: 40%;
 }
 
 .info-compra{
@@ -71,12 +77,13 @@ footer h2{
 }
 
 .burger-menu{
+    display: block;
     font-size: 2em;
     background-color: #1259c3;
     color:white;
     border:none;
     border-radius: 5px;
-    margin: auto;
+    margin: .6em auto;
     padding:5px 11px;
 }
 
@@ -117,7 +124,7 @@ footer h2{
 
 .center{
     text-align: center;
-    margin: auto;
+    margin: 1em auto;
 }
 
 @media (max-width:360px){    
