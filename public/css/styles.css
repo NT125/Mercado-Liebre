@@ -1,6 +1,7 @@
 * {
     font-family: 'Roboto';
     margin:0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -24,17 +25,36 @@ h2{
     margin: 1em 0;
 }
 
-article{
+main section article{
     background-color: white;
     margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-article img{
+main section article img{
+    flex-grow: 1;
     display:block;
     max-width: 100%;
     padding: 5px;
     margin: auto;
 }
+
+/* Logo del delivery */
+main section article i{
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding:5px;
+    color: #39b54a;
+    background-color: #FFF;
+    border: solid 1px #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
 
 a{
     text-decoration: none;
@@ -104,34 +124,30 @@ footer .copyright{
     padding:5px 11px;
 }
 
-.delivery-logo{
-    width: 2em;
-    color: #39b54a;
-    border: solid 1px #39b54a;
-    border-radius: 100%;
-    padding:5px;
-    margin:10px 0;
-}
-
 .article-info{
+    position: relative;
     border-top:solid 1px #ebebeb;
-    background-color: whitesmoke;
     padding:15px;
+    flex-grow: 1;
 }
 
-.precio{
+.article-info .precio{
+    display: flex;
+}
+
+.precioTotal{
     font-size:18px;
-    font-weight: 600;
     margin: 0;
-}
-
-.descuento, .descripcion{
-    font-size: 16px;
+    flex-grow: 0.1;
+    align-self: flex-end;
 }
 
 .descuento{
     color:#5fcd1a;
     margin: 0;
+    flex-grow: 0.9;
+    align-self: flex-end;
+    font-size: 14px;
 }
 
 .descripcion{
