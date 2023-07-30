@@ -15,18 +15,22 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
+        <div class="encabezado">
+            <div class="logo-y-busqueda">
+                <div class="logo">
+                    <img src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
+                </div>
+                <div class="busqueda">
+                    <input type="search" name="articleSearch" id="articleSearch" placeholder="Buscar productos, marcas">
+                    <button type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <p class="center info-compra">
+                <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito.
+            </p>
         </div>
-        <div class="search-bar">
-            <input type="search" name="articleSearch" id="articleSearch" placeholder="Buscar productos, marcas">
-            <button type="button">
-                <i class="fas fa-search"></i>
-            </button>
-        </div>
-        <p class="center info-compra">
-            <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito.
-        </p>
         <div class="navbar">
             <nav>
                 <ul class="seccion-tienda">
@@ -43,17 +47,15 @@
                 </ul>
             </nav>
 
-            <div >
-                <button type="button" class="burger-menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
+            <button type="button" class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </button>
 
         </div>
     </header>
 
     <main>
-        <section id="last-visit">
+        <section id="ultima-visita">
             <h2>Basado en tu última visita</h2>
 
             <article>
@@ -62,8 +64,8 @@
                 </div>
                 <div class="article-info">
                     <i class="fa-solid fa-truck"></i>
-                    <div class="precioTotal">
-                        <p class="precio">$6.770</p>
+                    <div class="precio">
+                        <p class="precioTotal">$6.770</p>
                         <p class="descuento">40% OFF</p>
                     </div>
                     <p class="descripcion">Cafetera Moulinex</p>
