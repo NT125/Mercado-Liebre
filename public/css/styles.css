@@ -19,13 +19,17 @@ main{
     margin: auto;
     width: 90vw;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 h2{
     color:#666;
     font-size: 24px;
     margin: 1em 0;
+}
+
+main section{
+    margin: 1rem 0 3rem;
 }
 
 main section article{
@@ -167,6 +171,14 @@ footer .copyright{
     background-color:#03264C;
 }
 
+.promo img{
+    width: 100%;
+}
+
+.promo .promo-pc{
+    display:none;
+}
+
 .ultima-visita,
 .on-sale{
     display:flex;
@@ -215,19 +227,25 @@ footer .copyright{
 }
 
 /* Code Review, primera parte */
-@media (min-width:576px){    
-}
-
 @media (min-width: 768px){
     .logo{
         width:25%
     }
+
     .busqueda{
         margin: auto;
     }
 
+    main section{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
     main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin: 1rem;
+        width: 40%;
     }
     .navbar nav{
         display:flex;
@@ -267,8 +285,21 @@ footer .copyright{
     }
 }
 
-@media (min-width: 992px){
+@media (min-width: 1200px){    
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin: 1rem;
+        width: 20%;
+    }
+
+    .promo .promo-mobile{
+        display:none;
+    }
+
+    .promo .promo-pc{
+        display:block;
+    }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1920px){
 }
