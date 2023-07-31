@@ -6,7 +6,7 @@ const app = express();
 /* Levantando el servidor */
 app.listen(8080, () => {
     console.log("¡Servidor en línea! :D");
-    console.log("Servidor arrancado en el puerto 8080");
+    console.log("Servidor corriendo en el puerto 8080");
 });
 
 /* Devolviendo las páginas al navegador */
