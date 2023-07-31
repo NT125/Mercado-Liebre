@@ -67,6 +67,10 @@ a{
     color: #03264C;
 }
 
+a:hover{
+    color:#1259c3;
+}
+
 p{
     font-size: 12px;
 }
