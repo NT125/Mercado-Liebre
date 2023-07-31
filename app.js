@@ -11,8 +11,12 @@ app.listen(8080, () => {
 
 /* Devolviendo las páginas al navegador */
 app.get('/', (req,res) => {
-    res.sendFile(path.join(__dirname,'/views/home.html'));
+    res.sendFile(__dirname + '/views/home.html');
 });
+
+app.get('/registro', (req,res)=>{
+    res.sendFile(__dirname + "/views/register.html");
+})
 
 /* Declarando ubicación de archivos estáticos */
 app.use(express.static('public'));
