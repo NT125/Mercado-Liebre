@@ -1,0 +1,150 @@
+:root{
+    --gris-claro: #ebebeb;
+    --gris-oscuro: #666;
+    --verde: #39b54a;
+    --azul-oscuro: #03264C;
+    --azul: #1259c3;
+    --amarillo: #eac926;
+}
+
+main{
+    padding:2rem 0;
+}
+
+form{
+    padding: 2rem;
+    background-color: #FFF;
+    border-radius:10px;
+    border: solid 1px var(--gris-claro);
+}
+
+fieldset{
+    margin: 0 0 2rem;
+    border: none;
+}
+
+
+legend{
+    color: var(--gris-oscuro);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+label{
+    display: block;
+    color:var(--gris-oscuro);
+}
+
+
+fieldset div{
+    margin: 1rem 0;
+}
+
+form input{
+    display:block;
+    width:100%;
+    height: 2rem;
+    margin:0.5rem 0;
+    padding: 0 0.5rem;
+    border: solid 2px var(--gris-claro);
+    border-radius: 5px;
+}
+
+form input[type="file"]{
+    border: none;
+}
+
+form input[type="checkbox"],
+form input[type="radio"]{
+    width: auto;
+    height: auto;
+    margin: 0 0.5rem 0;
+}
+
+form input:focus{
+    outline: none;
+    border: solid 2px var(--azul);
+}
+
+form button{
+    font-weight: 600;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+button[type="submit"]{
+    background-color: var(--azul);
+    color:#FFF;
+}
+
+button[type="submit"]:hover{
+    background-color: #0b4daf;
+}
+
+button[type="submit"]:active{
+    background-color: #051f3b;
+}
+
+button[type="reset"]{
+    border: solid 1px var(--azul);
+    background-color: #FFF;
+    color:var(--azul);
+}
+
+button[type="reset"]:hover{
+    background-color:var(--gris-claro);
+}
+
+button[type="reset"]:active{
+    background-color:var(--gris-oscuro);
+    color:#FFF;
+}
+
+.last-fieldset{
+    margin: 0;
+}
+
+.buttons{
+    margin-top: 2rem;
+}
+
+.inline{
+    display:flex;
+    align-items: center;
+}
+
+.inline-centered{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.small{
+    color: var(--gris-oscuro);
+    font-size: 14px;
+}
+
+@media (max-width:335px){
+    .buttons{
+        display:flex;
+        flex-direction: column;
+    }       
+    form button{
+        margin: .5rem;
+        width: 100%;
+    }
+}
+
+@media (min-width:768px){  
+    form{
+        width: 100%;
+        margin: auto;
+        padding:3rem;
+        max-width: 600px;
+    }  
+    form button{
+        margin: 1rem;
+        width: 100%;
+    }
+}

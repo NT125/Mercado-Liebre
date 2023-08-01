@@ -1,3 +1,12 @@
+:root{
+    --gris-claro: #ebebeb;
+    --gris-oscuro: #666;
+    --verde: #39b54a;
+    --azul-oscuro: #03264C;
+    --azul: #1259c3;
+    --amarillo: #eac926;
+}
+
 * {
     font-family: 'Roboto';
     margin:0;
@@ -22,10 +31,18 @@ main{
     flex-direction: column;
 }
 
-h2{
-    color:#666;
-    font-size: 24px;
+h1,h2,h3,h4,h5,h6{
+    color:var(--gris-oscuro);
     margin: 1em 0;
+    font-weight: 800;
+}
+
+h1{
+    font-size: 36px;
+}
+
+h2{
+    font-size: 24px;
 }
 
 main section{
@@ -80,6 +97,14 @@ ul{
     padding: 0;
 }
 
+button{
+    border: solid 1px #0000;
+}
+
+button:hover{
+    cursor: pointer;    
+}
+
 footer{
     padding-top: 1em;
     background-color: white;
@@ -100,6 +125,11 @@ footer i{
 
 footer h3{
     margin: 0;
+}
+
+footer .info{    
+    display:flex;
+    flex-direction: column;
 }
 
 footer .copyright{
@@ -230,6 +260,10 @@ footer .copyright{
     margin: 1em auto;
 }
 
+.texto-centrado{
+    text-align: center;
+}
+
 /* Code Review, primera parte */
 @media (min-width: 768px){
     .logo{
@@ -286,6 +320,12 @@ footer .copyright{
     }
     .burger-menu{
         display:none;
+    }
+}
+
+@media(min-width:768px){
+    footer .info{
+        flex-direction: row;
     }
 }
 
