@@ -76,10 +76,11 @@ form button{
 button[type="submit"]{
     background-color: var(--azul);
     color:#FFF;
+    transition: all 0.3s;
 }
 
 button[type="submit"]:hover{
-    background-color: #0b4daf;
+    background-color: #0022aa;
 }
 
 button[type="submit"]:active{
