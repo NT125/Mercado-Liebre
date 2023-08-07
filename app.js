@@ -3,10 +3,12 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
+const PORT = process.env.PORT || 8080;
+
 /* Levantando el servidor */
 app.listen(8080, () => {
     console.log("¡Servidor en línea! :D");
-    console.log("Servidor corriendo en el puerto 8080");
+    console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
 
 /* Devolviendo las páginas al navegador */
