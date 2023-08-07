@@ -76,7 +76,7 @@ form button{
 button[type="submit"]{
     background-color: var(--azul);
     color:#FFF;
-    transition: all 0.3s;
+    transition: all .3s;
 }
 
 button[type="submit"]:hover{
@@ -84,13 +84,14 @@ button[type="submit"]:hover{
 }
 
 button[type="submit"]:active{
-    background-color: #051f3b;
+    background-color: #012;
 }
 
 button[type="reset"]{
     border: solid 1px var(--azul);
     background-color: #FFF;
     color:var(--azul);
+    transition: all .3s;
 }
 
 button[type="reset"]:hover{
