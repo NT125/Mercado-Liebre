@@ -15,7 +15,7 @@
 }
 
 header{
-    background-color:#eac926;
+    background-color:var(--amarillo);
     padding:0.5em 1.5em;
     box-sizing: content-box;
 }
@@ -68,9 +68,9 @@ main section article i{
     width: 30px;
     height: 30px;
     padding:5px;
-    color: #39b54a;
+    color: var(--verde);
     background-color: #FFF;
-    border: solid 1px #39b54a;
+    border: solid 1px var(--verde);
     border-radius: 50%;
     position: absolute;
     right: 20px;
@@ -81,12 +81,12 @@ main section article i{
 a{
     text-decoration: none;
     font-weight: 600;
-    color: #03264C;
+    color: var(--azul-oscuro);
     transition: all 0.2s;
 }
 
 a:hover{
-    color:#1259c3;
+    color:var(--azul);
 }
 
 p{
@@ -109,7 +109,7 @@ button:hover{
 footer{
     padding-top: 1em;
     background-color: white;
-    color: #666;
+    color: var(--gris-oscuro);
     margin: auto;
     text-align: center;
 }
@@ -121,12 +121,12 @@ footer section{
 footer i{
     font-size: 2em;
     margin-bottom: 10px;
-    color:#1259c3;
+    color:var(--azul);
     transition: all .3s;
 }
 
 footer i:hover{
-    color:#666;
+    color:var(--gris-oscuro);
 }
 
 footer h3{
@@ -175,7 +175,7 @@ footer .copyright{
     border: none;
     border-radius: 0 5px 5px 0;
     padding: 0.5rem;
-    color: #666;
+    color: var(--gris-oscuro);
 }
 
 .busqueda button:hover{
@@ -183,7 +183,7 @@ footer .copyright{
 }
 
 .busqueda button:active{
-    background-color: #ebebeb;
+    background-color: var(--gris-claro);
     cursor: pointer;
 }
 
@@ -199,7 +199,7 @@ footer .copyright{
 .burger-menu{
     display: block;
     font-size: 2em;
-    background-color: #1259c3;
+    background-color: var(--azul);
     color:white;
     border:none;
     border-radius: 5px;
@@ -208,7 +208,7 @@ footer .copyright{
 }
 
 .burger-menu:active{
-    background-color:#03264C;
+    background-color:var(--azul-oscuro);
 }
 
 .promo img{
@@ -231,7 +231,7 @@ footer .copyright{
 .article-info{
     justify-content: space-between;
     position: relative;
-    border-top:solid 1px #ebebeb;
+    border-top:solid 1px var(--gris-claro);
     padding:15px;
     flex-grow: 1;
 }
@@ -248,7 +248,7 @@ footer .copyright{
 }
 
 .descuento{
-    color:#5fcd1a;
+    color:var(--verde);
     margin: 0;
     flex-grow: 0.9;
     align-self: flex-end;
@@ -258,7 +258,7 @@ footer .copyright{
 .descripcion{
     display:none;
     margin-top: 1em;
-    color: #666;
+    color: var(--gris-oscuro);
 }
 
 .info-compra{
@@ -355,11 +355,13 @@ footer .copyright{
 
     .descripcion{
         color:#0000;
+        font-size:1px;
         transition: all .3s;
     }
 
     main section article:hover .descripcion{
-        color:#666
+        color:#666;
+        font-size:1rem;
     }
 
     .promo .promo-mobile{
