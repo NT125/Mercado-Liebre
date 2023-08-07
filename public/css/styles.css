@@ -355,13 +355,11 @@ footer .copyright{
 
     .descripcion{
         color:#0000;
-        font-size:1px;
         transition: all .3s;
     }
 
     main section article:hover .descripcion{
         color:#666;
-        font-size:1rem;
     }
 
     .promo .promo-mobile{
