@@ -1,10 +1,11 @@
 :root{
+    --negro: #000000e5;
     --gris-claro: #ebebeb;
     --gris-oscuro: #666;
     --verde: #39b54a;
     --azul-oscuro: #03264C;
     --azul: #1259c3;
-    --amarillo: #eac926;
+    --amarillo: #fff159;
 }
 
 * {
@@ -16,7 +17,7 @@
 
 header{
     background-color:var(--amarillo);
-    padding:0.5em 1.5em;
+    padding:0.2em 2em;
     box-sizing: content-box;
 }
 
@@ -32,7 +33,7 @@ main{
 }
 
 h1,h2,h3,h4,h5,h6{
-    color:var(--gris-oscuro);
+    color:var(--negro);
     margin: 1em 0;
     font-weight: 800;
 }
@@ -80,7 +81,6 @@ main section article i{
 
 a{
     text-decoration: none;
-    font-weight: 600;
     color: var(--azul-oscuro);
     transition: all 0.2s;
 }
@@ -151,19 +151,26 @@ footer .copyright{
 
 .logo{
     width: 50%;
-    margin: 20px 20px 20px 0;
+    margin: 10px 10px 10px 0;
+}
+
+.logo img{
+    filter: brightness(1.2);
 }
 
 .busqueda{
-    width:50%;
+    width:70%;
     display: flex;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
+
 .busqueda input{
+    font-size: 12px;
+    font-weight: 200;
     width: 100%;
     border: none;
     border-radius: 5px 0 0 5px;
-    padding: 0.5rem;
 }
 
 .busqueda input:focus{
@@ -174,8 +181,11 @@ footer .copyright{
     background-color: #FFF;
     border: none;
     border-radius: 0 5px 5px 0;
-    padding: 0.5rem;
     color: var(--gris-oscuro);
+}
+
+.busqueda input, .busqueda button{
+    padding:.7rem
 }
 
 .busqueda button:hover{
@@ -326,6 +336,12 @@ footer .copyright{
 }
 
 @media(min-width:768px){
+    .busqueda input, .busqueda button{
+        padding:1rem
+    }
+    .busqueda input{
+        font-size: 14px;
+    }
     footer .info{
         flex-direction: row;
     }
@@ -335,6 +351,9 @@ footer .copyright{
 }
 
 @media (min-width: 1200px){    
+    header{        
+        padding:0.2em 8em;
+    }
     main section article{
         margin: 1rem;
         width: 20%;
