@@ -272,8 +272,8 @@ footer .copyright{
 }
 
 .info-compra{
+    font-size: 15px;
     text-align: center;
-    margin: 1em auto;
 }
 
 .texto-centrado{
@@ -282,6 +282,11 @@ footer .copyright{
 
 /* Code Review, primera parte */
 @media (min-width: 768px){
+    .info-compra{
+        font-size: 12px;
+        margin: 1em auto;
+    }
+
     .logo{
         width:25%
     }
