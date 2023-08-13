@@ -1,9 +1,11 @@
 /* Requiriendo librerías */
-const express = require('express');
-const path = require('path');
-const app = express();
+let express = require('express');
+let path = require('path');
+let app = express();
 
 const PORT = process.env.PORT || 8080;
+
+let mainRoutes = require("./routes/main");
 
 /* Levantando el servidor */
 app.listen(8080, () => {
@@ -12,17 +14,7 @@ app.listen(8080, () => {
 });
 
 /* Devolviendo las páginas al navegador */
-app.get('/', (req,res) => {
-    res.sendFile(__dirname + '/views/home.html');
-});
-
-app.get('/registro', (req,res)=>{
-    res.sendFile(__dirname + "/views/register.html");
-})
-
-app.get('/login', (req,res)=>{
-    res.sendFile(__dirname + "/views/login.html");
-})
+app.use('/', mainRoutes);
 
 /* Declarando ubicación de archivos estáticos */
 app.use(express.static('public'));
