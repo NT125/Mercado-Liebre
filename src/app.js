@@ -5,6 +5,7 @@ let app = express();
 const PORT = process.env.PORT || 8080;
 
 let mainRoutes = require("./routes/main");
+let usersRoutes = require("./routes/users");
 
 /* Declarando ubicación de archivos estáticos */
 app.use(express.static(path.join(__dirname,"../public")));
@@ -15,6 +16,7 @@ app.set("views", path.join(__dirname,"./views"));
 
 /* Usando las rutas */
 app.use('/', mainRoutes);
+app.use('/usuarios', usersRoutes);
 
 /* Levantando el servidor */
 app.listen(8080, () => {
