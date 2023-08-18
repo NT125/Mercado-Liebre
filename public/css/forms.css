@@ -1,11 +1,13 @@
 :root{
+    --negro: #000000e5;
     --gris-claro: #ebebeb;
     --gris-oscuro: #666;
     --verde: #39b54a;
     --azul-oscuro: #03264C;
     --azul: #1259c3;
-    --amarillo: #eac926;
+    --amarillo: #fff159;
 }
+
 
 main{
     padding:2rem 0;
